@@ -71,13 +71,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
 
-
         File guestListFile = new File("src/GuestList.txt");
         File waitListFile = new File("src/WaitingList.txt");
-
         GuestList guestList = importGuestList(guestListFile, waitListFile);
-
-
 
         System.out.println("Type help for list of commands.");
         while(true){
@@ -126,6 +122,7 @@ public class Main {
                     guestList.search();
                     break;
                 case "quit":
+                    scan.close();
                     return;
                 default:
                     System.out.println("Command not valid. Type help for the list of commands.");
