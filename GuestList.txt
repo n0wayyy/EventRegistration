@@ -1,4 +1,0 @@
-50
-Andreiut,Damian,andreidamian@yahoo.com,0777777777
-Gabi,Popo,gabipopi@yahoo.com,0722222222
-Ion,Barbu,ionbarbu@yahoo.com,0723232323
