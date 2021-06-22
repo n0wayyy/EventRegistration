@@ -23,9 +23,9 @@ public class Main {
 
         fileScanner = new Scanner(waitingListFile);
         while(fileScanner.hasNextLine()){
-            if(fileScanner.next().equals("test"))
-                break;
             String[] stringArray = fileScanner.nextLine().split(",");
+            if(stringArray[0].equals("test"))
+                break;
             Guest guest = new Guest(stringArray[0], stringArray[1], stringArray[2], stringArray[3]);
             guestQueueArrayList.add(guest);
         }

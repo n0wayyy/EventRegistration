@@ -77,8 +77,8 @@ public class GuestList extends ArrayList {
         }
 
         guestQueueArrayList.add(newGuest);
-        System.out.println("You have been added to the waiting list. Your current queue number is: " + (guestQueueArrayList.size() - 1)
-                + "You will be notified as soon as a spot becomes available.");
+        System.out.println("You have been added to the waiting list. Your current queue number is: " + guestQueueArrayList.size()
+                + "\nYou will be notified as soon as a spot becomes available.");
         return guestQueueArrayList.size() - 1;
     }
 
@@ -342,7 +342,7 @@ public class GuestList extends ArrayList {
 
         for(Guest guest : guestQueueArrayList){
             if(guest.findString(searchInput)){
-                System.out.println("Guest currently in waiting list. Guest waiting number: " + guestQueueArrayList.indexOf(guest) + 1);
+                System.out.println("Guest currently in waiting list. Guest waiting number: " + (guestQueueArrayList.indexOf(guest) + 1));
                 System.out.println("Guest details:");
                 displayGuestDetails(guest);
                 found = true;
@@ -366,7 +366,7 @@ public class GuestList extends ArrayList {
         while(!condition) {
             System.out.print("First name: ");
             firstName = sc.next();
-            System.out.println();
+
 
             condition = verifyName(firstName);
             if(!condition)
@@ -377,7 +377,6 @@ public class GuestList extends ArrayList {
         while(!condition) {
             System.out.print("Last name: ");
             lastName = sc.next();
-            System.out.println();
 
             condition = verifyName(lastName);
             if(!condition)
@@ -388,7 +387,6 @@ public class GuestList extends ArrayList {
         while (!condition) {
             System.out.print("EMail: ");
             EMail = sc.next();
-            System.out.println();
 
             condition = verifyEmail(EMail);
             if(!condition)
@@ -400,7 +398,6 @@ public class GuestList extends ArrayList {
         while(!condition) {
             System.out.print("Phone number: ");
             phoneNumber = sc.next();
-            System.out.println();
 
             condition = verifyPhoneNumber(phoneNumber);
             if(!condition)

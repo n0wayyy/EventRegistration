@@ -1,4 +1,11 @@
-50
+10
 Andreiut,Damian,andreidamian@yahoo.com,0777777777
 Gabi,Popo,gabipopi@yahoo.com,0722222222
 Ion,Barbu,ionbarbu@yahoo.com,0723232323
+Rafferty,Bullock,raffertybullock@yahoo.com,0721212121
+Sufyaan,Field,sf@yahoo.com,0720202020
+Waseem,Lowry,waslow@yahoo.com,0724242424
+Nafeesa,Li,nafli@yahoo.com,0726262626
+Emeli,Yates,emiyates@yahoo.com,0727272727
+Diego,Carey,dierey@yahoo.com,0728282828
+Charis,Finch,charfin@yahoo.com,0729292929
