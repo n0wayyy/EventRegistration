@@ -30,6 +30,7 @@ public class Main {
             guestQueueArrayList.add(guest);
         }
 
+        fileScanner.close();
         GuestList guestList = new GuestList(capacity, guestArrayList, guestQueueArrayList);
         return guestList;
     }
